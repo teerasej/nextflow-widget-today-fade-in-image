@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter 3 นาที: Hero Transition'),
+      home: MyHomePage(title: 'Flutter 3 นาที: Fade in Image'),
     );
   }
 }
@@ -34,10 +34,6 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           title: Text(widget.title),
         ),
-        body: FadeInImage(
-          placeholder: AssetImage('images/300x200.png'),
-          image: NetworkImage(
-              'https://nextflow.in.th/google-flutter-online-asset/inhouse1.jpg'),
-        ));
+        body: Container());
   }
 }
