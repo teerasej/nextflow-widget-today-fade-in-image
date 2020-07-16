@@ -34,6 +34,10 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           title: Text(widget.title),
         ),
-        body: Container());
+        body: FadeInImage(
+          placeholder: AssetImage('images/300x200.png'),
+          image: NetworkImage(
+              'https://nextflow.in.th/google-flutter-online-asset/inhouse1.jpg'),
+        ));
   }
 }
